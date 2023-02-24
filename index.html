@@ -5,43 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1 id="title">RicardoandAhmed Survey Form</h1>
     <p id="description">Thank you for checking our Survey</p>
     <form id="survey-form">
-        <div class="">
+        <div class="tap-name">
             <label id="name-label">Name</label>
-            <input id="name" type="text" placeholder="Enter your name"/>
+            <br>
+            <input id="name" size=75  type="text" placeholder="Enter your name"/>
         </div>
-        <div>
+        <div class = "tap-email">
             <label id="email-label">Email</label>
-            <input id="email" type="email" placeholder="Enter your Email"/>
+            <br>
+            <input id="email" size=75 type="email" placeholder="Enter your Email"/>
         </div>
         <div>
             <label id="age-label">Age (optional)</label>
+            <br>
             <input id="number" type="number" min="15" max="99" placeholder="Age"/>
         </div>
         <div>
-            <p>Which Options best describes your current role</p>
-            <select id="dropdown" disabled selected value name="Select current role">
+            <p>Which Options best describes your current role?</p>
+            <select  name="dropdown" id="dropdown">
+                <option disabled selected value ="Select current role"> Select your current role</option>
                 <option value="student">Student</option>
                 <option value="full time Job">Full Time Job</option>
                 <option value="other">Other</option>
             </select>
         </div>
-        <input>
-            <p>Would you recommend freecodecamp to friend</p>
+        
+            <p>Would you recommend freecodecamp to friend?</p>
             <input type="radio" id="" name="user" value="Yes">Yes</input>
             <input type="radio" id="" name="user" value="No">No</input>
         </div>
         <div>
             <p>What would you like to see improved? (check all that apply)</p>
-            <input type="checkbox" name="prefer" value="Frontend-Development"/>
-            <input type="checkbox" name="prefer" value="Backend-Development"/>
-            <input type="checkbox" name="prefer" value="Videos">
-            <input type="checkbox" name="prefer" value="Wiki"/>
-            <input type="checkbox" name="prefer" value="Assignments"/>
+            <input type="checkbox" name="prefer" value="Frontend-Development"/>Frontend-Development</input>
+            <input type="checkbox" name="prefer" value="Backend-Development"/>Backend-Development</input>
+            <input type="checkbox" name="prefer" value="Videos">Videos</input>
+            <input type="checkbox" name="prefer" value="Wiki"/>Wiki</input>
+            <input type="checkbox" name="prefer" value="Assignments"/>Assignments</input>
+        </div>
+
+        <div>
+            <p> Any comments or suggestions?</p>
+            <textarea name="comments" id="comment-box" size=75 cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div>
+            <button type="submit" id="submit">Submit</button>
         </div>
     </form>
     
